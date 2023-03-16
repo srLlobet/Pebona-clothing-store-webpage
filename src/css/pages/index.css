@@ -1,0 +1,241 @@
+html *{
+    font-family: "Karla";
+    margin:0%;
+    padding: 0%;
+}
+
+/*per que totes les imatges ocupin el 100% del contenidor que les conté*/
+img{
+    width: 100%;
+}
+
+/*prevenció de punts negres a la llista*/
+ul {
+    list-style-type: none;
+}
+
+/*actuo sobre tots els logos alhora*/
+
+.material-icons{
+    color:gray;
+}
+.material-icons:hover{
+    color:#d2201c;
+}
+
+/* He decidit fer que el header fos display: flex ja que tot havia d'estar situat en una mateixa línia*/
+#header{
+    display: flex;
+    position: fixed;
+    padding: 2%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    box-shadow: 2px 2px 18px gray;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(246, 246, 246, 0.3)
+}
+
+/*M'ha semblat més fàcil fer la transparència amb rgb que modificant la opacitat*/
+#header:hover{
+    background-color: rgb(246, 246, 246, 1)
+}
+
+/* per que no faci el logo gran*/
+#mainLogo{
+    object-fit: none;
+}
+
+
+.fotos{
+    padding: 2%;
+    margin-top: 5%;
+}
+
+/*Aquí he preferit l'us d'un grid, ja que les fotos están disposades en una graella. He fet que les columnes ocupin percentatges perque sigui responsive, i he utilitzat un 
+grid-area per disposar els elements.*/
+.fotos > .fotoList{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 1%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "dude dude jacket glasses"
+    "dude dude jacket shoe1"
+    "shoe2 bag girl girl"
+    "clock bag girl girl";
+}
+
+.fotos > .fotoList > li:first-child {
+    grid-area: dude;
+    text-align: center;
+}
+
+.fotos > .fotoList > li:last-child{
+    grid-area: girl;
+}
+
+.fotos > .fotoList > li:nth-child(2){
+    grid-area: jacket;
+}
+
+.fotos > .fotoList > li:nth-child(3){
+    grid-area: glasses;
+}
+
+.fotos > .fotoList > li:nth-child(4){
+    grid-area: shoe1;
+}
+
+.fotos > .fotoList > li:nth-child(5){
+    grid-area: shoe2;
+}
+
+.fotos > .fotoList > li:nth-child(6){
+    grid-area: clock;
+}
+
+.fotos > .fotoList > li:nth-child(7){
+    grid-area: bag;
+}
+
+h1{
+    text-align: center;
+    padding-top: 3%;
+}
+
+#redLogo{
+    width: 5%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 2%;
+}
+/*Tot i que estan disposats en una línia, he utilitzat un grid enlloc d'un flex per la propietat grid-template-columns que fa les fotos responsive*/
+.products{
+    display:grid;
+    padding: 1%;
+    margin-right: 1%;
+    grid-gap: 1%;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+}
+
+/* Em sembla més fàcil actuar sobre tots els childs alhora, que individualment, per això he fet l'estructura .parent .child */
+.products .material-icons{
+    color: #f4d88e;
+}
+
+.products .crossedPrice{
+    grid-row: 3;
+    text-decoration: line-through;
+}
+
+.products .Price{
+    grid-row: 3;
+    color:#d2201c;
+
+}
+
+.products .description{
+    grid-column: span 2;
+    padding-bottom: 1%;
+}
+
+.productDiv{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.products :hover{
+    box-shadow: 2px 2px 18px gray;
+}
+
+/* No he pogut assignar l'ombra nomès al parent.*/
+.footer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    box-shadow: 2px 2px 18px gray;
+    padding: 1%;
+}
+
+.footerLogo{
+    padding-left: 1%;
+    font-style: italic;
+}
+
+#footerImage{
+    width: auto;
+}
+
+.greyCursive{
+    color: gray;
+}
+
+#nostyle{
+    color: black;
+}
+#thisBigger{
+    padding-bottom: 1%;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: purple;
+    color: white;
+  }
+  
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+.searchBar{
+    border-radius: 100%;
+}
+
+  input {
+    border-radius: 2%;
+    width: 90%;
+    border: none;
+    font-size: 12px;
+    background-color: lightgray;
+    padding: 2%;
+    
+  }

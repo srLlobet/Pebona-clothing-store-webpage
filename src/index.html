@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+    <link rel="stylesheet" type="text/css" href="./css/pages/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div class="headerLogo">
+            <img id="mainLogo" src="/media/img/logo_pebona.png" alt="Main Logo">
+        </div>
+        <!--- Aquí ha estat error meu colocar totes les paraules en un sol <p>, ja que no he pogut estilitzar el text individualment, però no m'ha donat temps de canviar-ho  -->
+        <div id="headerBody">
+            <p>
+                HOME
+                <span class="material-icons">
+                    expand_more &nbsp;
+                </span>
+                SHOP
+                <span class="material-icons">
+                    expand_more &nbsp;
+                </span>
+                BLOG
+                PRODUCTS
+                <span class="material-icons">
+                    expand_more &nbsp;
+                </span>
+                ABOUT US &nbsp;
+                CONTACT US
+            </p>
+        </div>
+
+        <div id="headerText">
+            <p>
+                Search our store
+                <span class="material-icons">
+                    search
+                </span>
+                <span class="material-icons">
+                    shopping_bag
+                </span>
+                <span class="material-icons">
+                    settings
+                </span>
+            </p>
+        </div>
+
+    </header>
+
+    <!-- He cregut que utilitzant una llista de figures, em seria més fàcil controlar les posicions de cada element-->
+    <section class="fotos">
+        <ul class="fotoList">
+
+            <li>
+                <figure>
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/slide-1_3e514a28-4061-4b2d-bb13-28682e3520e7.jpg?v=1538904304"
+                        alt="glassesman">
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-11_cb5b2a35-f164-488e-a02d-c66267b4a16c.jpg?v=1538904380)"
+                        alt="yellowBoi">
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-12_d32131a9-3376-4559-9fe1-4e7f9dda7d0e.jpg?v=1538904394)"
+                        alt="glasses">
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-13_74db4690-c61e-46b1-9f90-4abebf720c94.jpg?v=1538904402)"
+                        alt="a shoe">
+                </figure>
+            </li>
+
+            <li>
+                <figure>
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-14.jpg?v=1537617822) "
+                        alt="secondShoe">
+                </figure>
+            </li>
+
+            <li>
+                <figure class>
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-15.jpg?v=1537617829)"
+                        alt="demClock">
+                </figure>
+            </li>
+
+            <li>
+                <figure class>
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-16.jpg?v=1537617841)"
+                        alt="abag">
+                </figure>
+            </li>
+
+            <li>
+                <figure class>
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-17.jpg?v=1537617851)"
+                        alt="gurl">
+                </figure>
+            </li>
+        </ul>
+
+    </section>
+          
+    <h1>New Trending Products</h1>
+    <figure id="redLogo">
+        <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/t/2/assets/title.png" alt="redWave">
+    </figure>
+    <h3>Accumstan vitae pede lacus ut uliamcorpe sollicitudin quisque libero est</h3>
+
+    <!-- Una secció que conté altres seccions, una per a cada producte-->
+    <!-- Tots els divs que contenen cada part del producte, comparteixen classe, per poder aplicar estils sobre tots alhora, per exemple les estrelles o el preu ratllat-->
+    <section class="products">
+
+        <section class="product">
+            <figure>
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/product_13_664978c2-d878-43ca-99b1-c4c46170f0ac_large.jpg?v=1571714767"
+                    alt="cartera">
+            </figure>
+            <div class="productDiv">
+                <p class="productName">
+                    Krystle
+                </p>
+                <div class="stars">
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                </div>
+                <p class="description">
+                    Parezca New Razonable
+                </p>
+
+                <p class="crossedPrice">
+                    $526.00
+                </p>
+
+                <p class="Price">
+                    $500.00
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="product">
+            <figure>
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/product_5_f073bdbe-103c-4341-9348-cb7fbf62087c_large.jpg?v=1571714766"
+                    alt="product-shoe">
+            </figure>
+            <div class="productDiv">
+                <p class="productName">
+                    Glus
+                </p>
+                <div class="stars">
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                </div>
+                <p class="description">
+                    Lorem Ipsum
+                </p>
+
+                <p class="crossedPrice">
+                    $555.00
+                </p>
+
+                <p class="Price">
+                    $500.00
+                </p>
+            </div>
+
+        </section>
+
+        <section class="product">
+            <figure>
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/product_6_e8c8fda6-8c7f-4adb-8f0a-e46272b3b714_large.jpg?v=1571714766"
+                    alt="blackBag">
+            </figure>
+            <div class="productDiv">
+                <p class="productName">
+                    Generic
+                </p>
+                <div class="stars">
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                </div>
+                <p class="description">
+                    Pensamiento Popular
+                </p>
+
+                <p class="crossedPrice">
+                    $360.00
+                </p>
+
+                <p class="Price">
+                    $258.00
+                </p>
+            </div>
+
+        </section>
+
+        <section class="product">
+            <figure>
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/product_10_37630cd1-1590-4d25-982b-e513c20c72d0_large.jpg?v=1571714766"
+                    alt="shades">
+            </figure>
+            <div class="productDiv">
+                <p class="productName">
+                    Imara
+                </p>
+                <div class="stars">
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                </div>
+                <p class="description">
+                    Predefinidos Cuando
+                </p>
+
+                <p class="crossedPrice">
+                    $190.00
+                </p>
+
+                <p class="Price">
+                    $180.00
+                </p>
+            </div>
+
+        </section>
+        <section class="product">
+            <figure>
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/Product-15_large.png?v=1571714767"
+                    alt="sock">
+            </figure>
+            <div class="productDiv">
+                <p class="productName">
+                    Krystle
+                </p>
+                <div class="stars">
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                </div>
+                <p class="description">
+                    Parezca New Razonable Christmas
+                </p>
+
+                <p class="crossedPrice">
+                    $526.00
+                </p>
+
+                <p class="Price">
+                    $500.00
+                </p>
+            </div>
+
+        </section>
+
+        <section class="product">
+            <figure>
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/Produc-7_93aee2bd-341d-44e4-98b8-c75db67f2fc5_large.png?v=1571714767"
+                    alt="christmas">
+            </figure>
+            <div class="productDiv">
+                <p class="productName">
+                    Glus
+                </p>
+                <div class="stars">
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                    <span class="material-icons">
+                        star_outline
+                    </span>
+                </div>
+                <p class="description">
+                    Quedando Esencialmente...
+                </p>
+
+                <p class="crossedPrice">
+                    $559.00
+                </p>
+
+                <p class="Price">
+                    $526.00
+                </p>
+            </div>
+
+        </section>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footerLogo">
+            <img id="footerImage" src="/media/img/logo_pebona.png" alt="Main Logo">
+            <p class="greyCursive">
+                Copyright © 218 <span id="nostyle">Pebona </span> Themes. All rights reserved
+            </p>
+        </div>
+
+        <div>
+            <p id="thisBigger">Sing Up For Our Newsletter</p>
+            <p>Get E-mail updates about our latest shop and special offers.</p>
+        </div>
+
+        <div class="searchBar">
+            <input type="text" name="search" placeholder="Your Email Address">
+        </div>
+
+        <div>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

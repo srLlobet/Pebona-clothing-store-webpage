@@ -1,0 +1,24 @@
+{
+  "name": "pebona",
+  "version": "0.0.0",
+  "description": "Ac2 Pebona",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "prebuild": "rm -rf dist",
+    "build": "html-minifier --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true",
+    "postbuild": "cp -rf src/css dist/css && cp -rf src/media dist/media && npx check-html-links dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "pebona",
+    "html"
+  ],
+  "author": "Joan Llobet Ruiz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html-minifier": "^4.0.0"
+  }
+}
